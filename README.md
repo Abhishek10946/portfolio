@@ -1,16 +1,88 @@
-# React + Vite
+# Abhishek Kale – Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal portfolio website built to showcase my projects, skills, education, and experience in a clean and professional manner.
 
-Currently, two official plugins are available:
+The website is designed to be simple, fast, and recruiter-friendly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Website
+Deployed on Vercel  
+(After deployment, add your live link here)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- React (Vite)
+- JavaScript
+- HTML & CSS
+- Git & GitHub
+- Vercel (Deployment)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Features
+- Fixed navigation bar with smooth scrolling
+- About, Education, Skills, Projects, Experience, and Contact sections
+- Project cards with GitHub repository links
+- Resume download button
+- Clean light green & white theme
+- Fully responsive and fast loading
+
+---
+
+## 📁 Project Structure
+```bash
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Hero.jsx
+│ ├── About.jsx
+│ ├── Education.jsx
+│ ├── Skills.jsx
+│ ├── Projects.jsx
+│ ├── ExtraCurricular.jsx
+│ ├── TestScores.jsx
+│ ├── Contact.jsx
+│ └── Footer.jsx
+│
+├── assets/
+│ └── data/
+│ ├── education.js
+│ ├── skills.js
+│ ├── projects.js
+│ ├── experience.js
+│ ├── extracurricular.js
+│ └── testScores.js
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## ▶️ Run Locally
+```bash
+- npm install
+- npm run dev
+- 📦 Build for Production
+- npm run build
+```
+## 🌐 Deployment
+- The project is deployed using Vercel with automatic CI/CD from GitHub.
+- 
+- 📄 Resume
+- The resume is available for download directly from the website.
+- 
+- 👤 Author
+- Abhishek Kale
+- Electrical Engineering Student
+- Aspiring Software Developer
+- 
+- GitHub: https://github.com/Abhishek10946
+- 
+- LinkedIn: https://www.linkedin.com/in/abhishek-kale-889437205/
+- 
+- 📌 Note
+- This portfolio is a personal project created for learning, showcasing skills, and professional visibility.
