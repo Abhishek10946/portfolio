@@ -8,7 +8,7 @@ The website is designed to be simple, fast, and recruiter-friendly.
 
 ## 🚀 Live Website
 Deployed on Vercel  
-(After deployment, add your live link here)
+- Here is the Website:https://portfolio-iota-smoky-raakn6p1qe.vercel.app/
 
 ---
 
@@ -79,8 +79,6 @@ src/
 - Abhishek Kale
 - Electrical Engineering Student
 - Aspiring Software Developer
-
-- Here is the Website:https://portfolio-iota-smoky-raakn6p1qe.vercel.app/
   
 - GitHub: https://github.com/Abhishek10946
   
