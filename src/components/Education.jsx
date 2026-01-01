@@ -9,7 +9,6 @@ export default function Education() {
         <p><strong>{education.college}</strong></p>
         <p>{education.degree} – {education.branch}</p>
         <p>{education.duration}</p>
-        <p>CGPA: {education.cgpa}</p>
         <p>{education.location}</p>
       </div>
     </section>
