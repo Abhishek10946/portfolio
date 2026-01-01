@@ -71,20 +71,20 @@ src/
 ```
 ## 🌐 Deployment
 - The project is deployed using Vercel with automatic CI/CD from GitHub.
-- 
+  
 - 📄 Resume
 - The resume is available for download directly from the website.
-- 
+  
 - 👤 Author
 - Abhishek Kale
 - Electrical Engineering Student
 - Aspiring Software Developer
 
 - Here is the Website:https://portfolio-iota-smoky-raakn6p1qe.vercel.app/
-- 
+  
 - GitHub: https://github.com/Abhishek10946
-- 
+  
 - LinkedIn: https://www.linkedin.com/in/abhishek-kale-889437205/
-- 
+  
 - 📌 Note
 - This portfolio is a personal project created for learning, showcasing skills, and professional visibility.
