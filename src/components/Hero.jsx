@@ -11,7 +11,7 @@ export default function Hero() {
       <p>Engineering Student | Software Developer</p>
 
       <a
-        href="/resume/Kale_Abhishek_30_12_26.pdf"
+        href="/resume/Abhishek_Kale_S_D_2026.pdf"
         target="_blank"
         rel="noopener noreferrer"
         style={styles.button}
