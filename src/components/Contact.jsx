@@ -11,7 +11,12 @@ export default function Contact() {
                       rel="noopener noreferrer">
         Abhishek10946
         </a></p>
-        <p>LinkedIn: https://www.linkedin.com/in/abhishek-kale-889437205/</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/abhishek-kale-889437205" 
+                      target="_blank"
+                      rel="noopener noreferrer">
+        abhishek-kale-889437205
+        </a></p>
+        </p>
       </div>
     </section>
   );
