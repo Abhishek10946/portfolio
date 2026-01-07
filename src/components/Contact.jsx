@@ -4,8 +4,12 @@ export default function Contact() {
       <h2>Contact</h2>
 
       <div style={styles.box}>
-        <p>Email: abhishekak22.elec@coeptech.ac.in</p>
-        <p>Gmail: kaleabhishek2104@gmail.com</p>
+        <p>Email: <a href="mailto:abhishekak22.elec@coeptech.ac.in">
+          abhishekak22.elec@coeptech.ac.in
+        </a></p>
+        <p>Email: <a href="mailto:kaleabhishek2104@gmail.com">
+          kaleabhishek2104@gmail.com
+        </a></p>
         <p>GitHub: <a href="https://github.com/Abhishek10946" 
                       target="_blank"
                       rel="noopener noreferrer">
