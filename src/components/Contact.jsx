@@ -6,7 +6,11 @@ export default function Contact() {
       <div style={styles.box}>
         <p>Email: abhishekak22.elec@coeptech.ac.in</p>
         <p>Gmail: kaleabhishek2104@gmail.com</p>
-        <p>GitHub: github.com/Abhishek10946</p>
+        <p>GitHub: <a href="https://github.com/your-username" 
+                      target="_blank"
+                      rel="noopener noreferrer">
+        Abhishek10946
+        </a></p>
         <p>LinkedIn: https://www.linkedin.com/in/abhishek-kale-889437205/</p>
       </div>
     </section>
