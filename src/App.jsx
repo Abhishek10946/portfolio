@@ -19,10 +19,10 @@ export default function App() {
 
       <Hero />
       <About />
+      <Education />
       <Skills />
       <Projects />
       <Experience />
-      <Education />
       <TestScores />
       <ExtraCurricular />
       <Contact />
