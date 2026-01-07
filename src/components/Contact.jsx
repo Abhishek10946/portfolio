@@ -5,7 +5,7 @@ export default function Contact() {
 
       <div style={styles.box}>
         <p>Email: abhishekak22.elec@coeptech.ac.in</p>
-        <p>     : kaleabhishek2104@email.com</p>
+        <p>Gmail: kaleabhishek2104@gmail.com</p>
         <p>GitHub: github.com/Abhishek10946</p>
         <p>LinkedIn: https://www.linkedin.com/in/abhishek-kale-889437205/</p>
       </div>
