@@ -4,17 +4,17 @@ export default function Contact() {
       <h2>Contact</h2>
 
       <div style={styles.box}>
-        <p>Email: <a href="mailto:abhishekak22.elec@coeptech.ac.in">
+        <p>Email:<p/> <a href="mailto:abhishekak22.elec@coeptech.ac.in">
           abhishekak22.elec@coeptech.ac.in
-        </a></p>
-        <p>Email: <a href="mailto:kaleabhishek2104@gmail.com">
+        </a>
+        <p>Email:</p> <a href="mailto:kaleabhishek2104@gmail.com">
           kaleabhishek2104@gmail.com
-        </a></p>
+        </a>
         <p>GitHub: <a href="https://github.com/Abhishek10946" 
                       target="_blank"
                       rel="noopener noreferrer">
         Abhishek10946
-        </a></p>
+        </a><p/>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/abhishek-kale-889437205" 
                       target="_blank"
                       rel="noopener noreferrer">
