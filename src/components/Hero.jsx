@@ -32,7 +32,8 @@ const styles = {
     height: "160px",
     borderRadius: "50%",
     objectFit: "cover",
-    marginBottom: "20px"
+    marginBottom: "20px",
+    borderColor: "green"
   },
   button: {
     display: "inline-block",
