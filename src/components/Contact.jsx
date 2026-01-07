@@ -16,7 +16,6 @@ export default function Contact() {
                       rel="noopener noreferrer">
         abhishek-kale-889437205
         </a></p>
-        </p>
       </div>
     </section>
   );
