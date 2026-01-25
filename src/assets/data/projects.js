@@ -29,7 +29,7 @@ export const projects = [
     description:
       "Relational database design and advanced SQL analytics for bookstore operations, sales insights, and reporting.",
     tech: ["SQL", "MySQL", "PostgreSQL", "Data Analysis"],
-    github: "https://github.com/Abhishek10946?tab=repositories"
+    github: "https://github.com/Abhishek10946/Book-Store"
   },
   {
     title: "Inline Terminal – AI-Enhanced CLI Tool",
