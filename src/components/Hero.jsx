@@ -13,7 +13,7 @@ export default function Hero() {
       </p>
 
       <a
-        href="/resume/Abhishek_Kale_S_D_2026.pdf"
+        href="/resume/Abhishek_COEP_2026.pdf"
         target="_blank"
         rel="noopener noreferrer"
         style={styles.button}
