@@ -1,43 +1,78 @@
+import { useState, useEffect } from "react";
+
+/**
+ * Navbar — fixed glassmorphism navigation bar.
+ * Tracks scroll position to add a deeper shadow when the user scrolls.
+ * Tracks the active section via IntersectionObserver to highlight the
+ * corresponding nav link with the .active class.
+ */
 export default function Navbar() {
+  const [scrolled, setScrolled]           = useState(false);
+  const [activeSection, setActiveSection] = useState("");
+
+  /* Add/remove .scrolled class based on scroll position */
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  /* Determine the active section as the user scrolls through the page */
+  useEffect(() => {
+    const sectionIds = ["about", "education", "skills", "projects", "experience", "contact"];
+
+    const observers = sectionIds.map((id) => {
+      const el = document.getElementById(id);
+      if (!el) return null;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) setActiveSection(id);
+        },
+        { rootMargin: "-40% 0px -55% 0px" }
+      );
+      observer.observe(el);
+      return observer;
+    });
+
+    return () => observers.forEach((obs) => obs?.disconnect());
+  }, []);
+
+  /* Nav link definitions — label maps to the section id anchor */
+  const navLinks = [
+    { label: "About",      href: "#about" },
+    { label: "Education",  href: "#education" },
+    { label: "Skills",     href: "#skills" },
+    { label: "Projects",   href: "#projects" },
+    { label: "Experience", href: "#experience" },
+    { label: "Contact",    href: "#contact" },
+  ];
+
   return (
-    <nav style={styles.nav}>
-      <h2 style={styles.logo}>Abhishek Kale</h2>
-      <ul style={styles.menu}>
-        <li><a href="#about" style={styles.link}>About</a></li>
-        <li><a href="#education" style={styles.link}>Education</a></li>
-        <li><a href="#skills" style={styles.link}>Skills</a></li>
-        <li><a href="#projects" style={styles.link}>Projects</a></li>
-        <li><a href="#contact" style={styles.link}>Contact</a></li>
-      </ul>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
+      <div className="navbar-inner">
+        {/* Brand logo — clicking scrolls back to top */}
+        <a href="#" className="navbar-logo">
+          Abhishek Kale
+        </a>
+
+        {/* Navigation links */}
+        <ul className="navbar-menu">
+          {navLinks.map(({ label, href }) => {
+            const sectionId = href.replace("#", "");
+            return (
+              <li key={label}>
+                <a
+                  href={href}
+                  className={`navbar-link ${activeSection === sectionId ? "active" : ""}`}
+                >
+                  {label}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </nav>
   );
 }
-
-const styles = {
-  nav: {
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    zIndex: 1000,
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px 40px",
-    background: "#b9eed5ff"
-  },
-  logo: {
-    color: "#065f46"
-  },
-  menu: {
-    listStyle: "none",
-    display: "flex",
-    gap: "20px",
-    margin: 0
-  },
-  link: {
-    color: "#111111",
-    textDecoration: "none",
-    fontWeight: "500"
-  }
-};
